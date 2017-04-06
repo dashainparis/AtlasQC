@@ -1,17 +1,17 @@
-## AtlasQC
+# AtlasQC
 
-#INTRODUCTION
+### INTRODUCTION
 This tool is designed for quality control of Illumina  microarrays genotyping data.
 
 
-# PREREQUISITES
+### PREREQUISITES
 To run this tool on your machine, you need to have Python 2.7 or 3 installed.
 Besides that, you need several packages, which can be installed using pip.
 -scikit-learn
 -plotly
 Тут полный список
 
-# HOW TO RUN
+### HOW TO RUN
 1. Most common scenario:
 python3 QCFINAL.py Genome_Studio_Report.txt --snps=snps.txt
 This command will run QC using your Genome_Studio_Report.txt as data file and
@@ -26,7 +26,7 @@ python3 QCFINAL.py Genome_Studio_Report.txt --angle 8.0
 The --angle key specifies max angle between points of each cluster. The default
 value is 8.0 degrees, but you can slightly increase or dicrease it.
 
-# INPUT FILE FORMATS
+### INPUT FILE FORMATS
 1. Genome Studio Report
 This tool uses default Genome Studio report, and we use columns:
 - SNP Name (which is Illumina Name)
@@ -44,7 +44,7 @@ F - for women, M - for men. Other symbols treated as undefined gender.
 For example:
 0000-1111	F
 
-# OUTPUT FILES
+### OUTPUT FILES
 Tool outputs 3 types of reports:
 1. Sample Report - list of snps, which have not pass the QC.
 This file contains columns:
@@ -66,9 +66,9 @@ Samples marked green - passes QC
 Samples marked blue - not passed QC
 Samples marked red - changed GT class
 
-# AUTHORS
+### AUTHORS
 Daria Yakovishina, PhD
 Nikita Moshkov
 
-# LICENSE
+### LICENSE
 GNU GPL v.3
