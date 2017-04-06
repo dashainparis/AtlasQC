@@ -68,6 +68,7 @@ Samples marked red - changed GT class
 
 ### AUTHORS
 Daria Yakovishina, PhD
+
 Nikita Moshkov
 
 ### LICENSE
