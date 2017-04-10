@@ -1,15 +1,18 @@
-# AtlasQC
+# CueSea
 
 ### INTRODUCTION
+
 This tool is designed for quality control of Illumina  microarrays genotyping data.
 
 
-### PREREQUISITES
+### Instalation
+
 To run this tool on your machine, you need to have Python 2.7 or 3 installed.
+
 Besides that, you need several packages, which can be installed using pip.
--scikit-learn
--plotly
-Тут полный список
+``
+pip install -scikit-learn -plotly
+``
 
 ### HOW TO RUN
 1. Most common scenario:
@@ -29,13 +32,15 @@ value is 8.0 degrees, but you can slightly increase or dicrease it.
 ### INPUT FILE FORMATS
 1. Genome Studio Report
 This tool uses default Genome Studio report, and we use columns:
+
 - SNP Name (which is Illumina Name)
 - Sample ID
 - Allele 1 - Top
 - Allele 2 - Top
 - Chr
-- X
-- Y
+- X # Normalised data
+- Y # Normalised data
+
 2. Snps list
 List of snps, one per line.
 3. Gender
